@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#2. Identify and display the Ethernet interface characteristics:
+#(a) Identify broadcast address
+#(b) Identify all IP adresses which are part of the same subnet
+
+#a
+ifconfig -L en0
+#b
+arp -a

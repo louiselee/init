@@ -1,0 +1,7 @@
+#13. Thanks to the previous question and the reverse DNS find the name of your host
+
+
+
+ Ans : nslookup 10.113.8.14  returns hostname e1z3r8p14.42.us.org
+	   other commands are hostname 
+

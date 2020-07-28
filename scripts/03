@@ -1,0 +1,9 @@
+#!/bin/bash
+
+alias g='gcc -g -Wall -Werror -Wextra -fsanitizer=address'
+alias r='./a.out'
+alias a='git add .'
+alias c='git commit -m'
+alias p='git push '
+
+

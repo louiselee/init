@@ -1,0 +1,6 @@
+#15. Make the intra.42.fr address reroute to 46.19.122.85
+
+ans:   add 46.19.122.85 to /etc/hosts
+
+       It requires super user privilidge to edit /etc/hosts.
+	   I am not alble to demonstrate.

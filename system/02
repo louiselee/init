@@ -1,0 +1,6 @@
+#!/bin/bash
+#2. What command can you use to rename your system?   (on debian)
+
+
+sudo hostname new_name;
+sudo hostname;

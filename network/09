@@ -1,0 +1,12 @@
+9. Find the external IP of 42.fr
+
+
+e1z3r7p25% curl ipecho.net/plain ; echo
+64.62.224.29
+
+
+dig - DNS lookup utility.   usage: dig @server name type
+
+e1z3r7p25% dig +short 42.fr @resolver1.opendns.com
+163.172.250.13
+163.172.250.12

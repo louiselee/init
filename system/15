@@ -1,0 +1,9 @@
+#!/bin/bash
+
+
+#15. Find the command that kills the background command’s process
+#kill $!    (kills the last process)
+#kill pid
+
+#taill is the name of the last command
+pkill tail

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#18. Find the command that kills ssh service
+
+# following cmd kills process ssh ??
+
+#ps -aux | grep ssh | cut -d' ' -f8 | kill     however, is does not work.
+
+echo "enter pid : "
+read id
+kill $id

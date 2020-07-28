@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#20. List all existing users on the VM
+
+cut -d':' -f1 /etc/passwd

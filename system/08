@@ -1,0 +1,6 @@
+#8. What file contains the RSA keys of systems that are authorized to connect via SSH?
+
+# cat /etc/ssh/sshd_config | grep AuthorizedKeysFile | awk '{ print $2 "\n" $3 }'
+
+Ans : .ssh/authorized_keys
+

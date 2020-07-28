@@ -1,0 +1,7 @@
+#3. (Debian) What file has to be modified to make it permanent?
+
+Ans:  Change /etc/hostname and /etc/hosts, then, reboot.  
+
+
+
+

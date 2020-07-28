@@ -1,0 +1,6 @@
+#!/bin/bash
+#6. Name the command that reboots the SSH service.
+
+service ssh status
+sudo service ssh restart
+service ssh status

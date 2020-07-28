@@ -1,0 +1,9 @@
+#4. Debian, What command gives you the time since your system was last booted?
+
+last reboot
+
+#or
+
+uptime
+
+

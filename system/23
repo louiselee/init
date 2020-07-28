@@ -1,0 +1,25 @@
+#23. Explain how connect yourself as new user. (With graphic session and ssh session)
+
+Ans : i
+   1. connect to a ssh session,
+      in /etc/ssh/sshd_config
+
+	  specify the following:
+
+	  Port 1234
+	  PermitRootLogin no
+	  allowUsers jim
+	  
+
+	  Above specification means use jim is allowed to 
+	  login by connect to port 1234.
+
+	 a.  ssh remotehost -  is the command-ine for ssh session. 
+
+
+  2.  connect with graphic session
+
+	 a. specify X11Forwarding yes in the server configuration file.
+     b. %ssh remotehost(ipaddr) 	 (from client side)
+
+

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#delete an ACTIVE user on the VM
+
+who | sudo userdel -r;

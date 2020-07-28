@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#19. List all services which are started at boot time and name this kind of services
+
+# systemctl list-units --type service or
+# systemctl list-unit-files | grep enabled or
+
+sudo systemctl list-unit-files --state=enabled 
+
+
+#these services are called daemons.  ex. ftpd, telnetd, lpd (laser printing), crond (cron).

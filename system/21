@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#21. List all real users on the VM
+
+# who shows users currently login.
+# real users are the users added by admin.  Their uid >=1000.
+
+awk -F ':' '$3 >=1000 {print valid user ; "$1"}' /etc/passwd

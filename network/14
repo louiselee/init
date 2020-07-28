@@ -1,0 +1,61 @@
+14. What file contains the local DNS entries?
+
+ans : /etc/resolv.conf is the file contains all DNS servers.
+      but, the local hosts are stored in /etc/hosts.
+
+
+#dig will let you perform any valid DNS query, the most common of which are:
+#
+#A (the IP address),
+#TXT (text annotations),
+#MX (mail exchanges), and
+#NS nameservers.
+#Use the following command to get the addresses for mt-example.com.
+#
+# dig mt-example.com A +noall +answer
+#Use the following command to get a list of all the mailservers for mt-example.com.
+#
+# dig mt-example.com MX +noall +answer
+#Use the following command to get a list of authoritative DNS servers for mt-example.com.
+#
+# dig mt-example.com NS +noall +answer
+#Use the following command to get a list of all the above in one set of results.
+#
+#dig mt-example.com ANY +noall +answer
+#Use the following command to query using a specific nameserver.
+#
+#dig @ns1.mediatemple.net mt-example.com
+##Use the following to trace the path taken.
+#
+# dig mt-example.com +trace
+
+
+#e1z3r8p14% dig -t ANY e1z3r8p14.42.us.org
+#
+#; <<>> DiG 9.10.6 <<>> -t ANY e1z3r8p14.42.us.org
+#;; global options: +cmd
+#;; Got answer:
+#;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 10132
+#;; flags: qr aa rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 1, ADDITIONAL: 3
+#
+#;; OPT PSEUDOSECTION:
+#; EDNS: version: 0, flags:; udp: 4096
+#;; QUESTION SECTION:
+#;e1z3r8p14.42.us.org.		IN	ANY
+##
+#;; ANSWER SECTION:
+#e1z3r8p14.42.us.org.	86400	IN	A	10.113.8.14
+#
+#;; AUTHORITY SECTION:
+#42.us.org.		86400	IN	NS	ns1.42.us.org.
+#
+#;; ADDITIONAL SECTION:
+#ns1.42.us.org.		86400	IN	A	10.51.1.5
+#ns1.42.us.org.		86400	IN	A	10.51.1.253
+#
+#;; Query time: 0 msec
+#;; SERVER: 10.51.1.253#53(10.51.1.253)
+#;; WHEN: Fri Feb 14 10:03:16 PST 2020
+#;; MSG SIZE  rcvd: 114
+#
+#e1z3r8p14%
